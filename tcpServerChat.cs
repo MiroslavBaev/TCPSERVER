@@ -66,7 +66,7 @@ namespace tcpServer
         {
             Console.Title = "TCP CHAT SERVER";
 
-            Console.WriteLine("-= Hello, Im TCP CHAT SERVER =-");
+            Console.WriteLine("-= Hello, I'm TCP CHAT SERVER =-");
             Console.WriteLine();
             Console.WriteLine("-----------------------------------------------------------------------------------");
             Console.WriteLine("COMMANDS:");
@@ -152,7 +152,7 @@ namespace tcpServer
             TcpClient currentClient = tcpServer.AcceptTcpClient();
             clientsWaitingToJoin.Add(currentClient);
             OpenSteam(currentClient);
-            streamWriter.WriteLine("Welcome to chat server");
+            streamWriter.WriteLine("Welcome to the chat server");
             streamWriter.Flush();
         }
         /// <summary>
