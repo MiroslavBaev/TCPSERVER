@@ -199,7 +199,7 @@ namespace tcpServer
                                 }
                                 else
                                 {
-                                    streamWriter.WriteLine("Server is full [{0}/{0}]! Try again later",clientsInServer.Count);
+                                    streamWriter.WriteLine("Server is full [{0}/{1}]! Try again later",clientsInServer.Count,MaxNumberConnections);
                                     streamWriter.Flush();
                                 }
                             }
